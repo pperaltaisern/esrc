@@ -7,7 +7,7 @@ import (
 
 // EventStore persists and loads aggregates as a sequence of events. Implementations must ensure optimistic concurrency.
 type EventStore interface {
-	// AddAggregate adds a new aggregate to the event store.
+	// AddAggregate adds a new aggregate with events to the event store.
 	// errs:
 	// 		ErrAggregateAlreadyExists
 	//		ErrAggregateRequiresEvents
